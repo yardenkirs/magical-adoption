@@ -1,0 +1,179 @@
+body
+{
+  display: inline-grid;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-image: url("bcg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior:smooth;
+}
+
+.nav {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top:0;
+    margin: 0;
+    margin-bottom: 5%;
+    padding:0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    z-index:1;
+}
+
+h1 {
+    color:rgb(79, 0, 170);
+    font-family: 'Dancing Script', cursive;
+    padding-left: 5px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display:inline;
+    padding: 10px;
+  }
+a {
+   text-decoration: none; 
+}
+
+a:link {
+    color:rgb(79, 0, 170);
+}
+
+a:visited {
+    color:rgb(79, 0, 170);
+}
+
+a:hover {
+    color: lightskyblue;
+}
+.pets {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+  grid-gap: 20px;
+  grid:
+  'basilisk ice-dragon cerberus'
+  'phoenix white-pegasus bowtruckle'
+  'griffin white-unicorn fire-dragon'
+  'sea-serpent niffler hippogriff'
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #a9d9e9;
+}
+.container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+.container:hover .overlay {
+  opacity: 1;
+
+}
+
+.img {
+  width: 100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.form {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-style: dotted;
+  border-color:thistle;
+  border-width: 2%;
+  width: 200px;
+  padding: 2%;
+  background-color: rgb(247, 241, 247);
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items:center;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 5%;
+  margin-left: 41%;
+  
+}
+
+#pet-list {
+  display: inline-block;
+  align-content: center;
+  align-items:center;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  text-align:left;
+  
+}
+
+.about {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items:flex-start;
+  
+
+}
+
+.about-p1 {
+  width: 60%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: large;
+  border-style: dotted;
+  border-color:thistle;
+  border-width: 2%;
+  padding: 2%;
+  background-color: rgb(247, 241, 247);
+  margin-top: 2%;
+}
+.about-p2 {
+  width: 60%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: large;
+  border-style: dotted;
+  border-color:rgb(191, 210, 216);
+  border-width: 2%;
+  padding: 2%;
+  background-color: rgb(241, 246, 247);
+  margin-top: 15%;
+  margin-left: 25%;
+  position: absolute;
+}

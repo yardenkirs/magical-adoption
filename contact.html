@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="style.css">
+        <style>@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@500;600&display=swap');</style>    
+    </head>
+    <body>
+        <div class="nav">
+            <a href="magical-adoption.html">
+              <img src="logo.png" alt="Logo" width=110px>
+            </a>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        <h1>Contact Us</h1>
+        <div class="form">
+            <form>
+                <label for="name">Full Name:</label><br>
+                <input type="text" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email"><br>
+                <label for="number">Phone Number:</label><br>
+                <input type="tel" name="number" pattern="[0-9]{3}-[0-9]{7}"><br>
+                <p>What pet are you interested in?</p>
+                <div id="pet-list">
+                    <input type="checkbox" name="basilisk" value="Basilisk">
+                    <label for="basilisk">Basilisk</label><br>
+                    <input type="checkbox" name="bowtruckle" value="Bowtruckle">
+                    <label for="bowtruckle">Bowtruckle</label><br>
+                    <input type="checkbox" name="basilisk" value="Basilisk">
+                    <label for="Cerberus">Cerberus</label><br>
+                    <input type="checkbox" name="Cerberus" value="Cerberus">
+                    <label for="basilisk">Basilisk</label><br>
+                    <input type="checkbox" name="Fire-Dragon" value="Fire-Dragon">
+                    <label for="Fire-Dragon">Fire Dragon</label><br>
+                    <input type="checkbox" name="Griffin" value="Griffin">
+                    <label for="Griffin">Griffin</label><br>
+                    <input type="checkbox" name="Hippogriff" value="Hippogriff">
+                    <label for="Hippogriff">Hippogriff</label><br>
+                    <input type="checkbox" name="Ice-Dragon" value="Ice-Dragon">
+                    <label for="Ice-Dragon">Ice Dragon</label><br>
+                    <input type="checkbox" name="Niffler" value="Niffler">
+                    <label for="Niffler">Niffler</label><br>
+                    <input type="checkbox" name="Phoenix" value="Phoenix">
+                    <label for="Phoenix">Phoenix</label><br>
+                    <input type="checkbox" name="Sea-Serpent" value="Sea-Serpent">
+                    <label for="Sea-Serpent">Sea Serpent</label><br>
+                    <input type="checkbox" name="Pegasus" value="Pegasus">
+                    <label for="Pegasus">Pegasus</label><br>
+                    <input type="checkbox" name="Unicorn" value="Unicorn">
+                    <label for="Unicorn">Unicorn</label><br>
+                </div>
+                <p>Anything else?</p>
+                <textarea name="comment">Enter text here...</textarea><br>
+                <button class="btn btn-primary" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
